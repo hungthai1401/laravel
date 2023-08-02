@@ -13,16 +13,23 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
+        "hungthai1401/grumphp-pint-task": "^0.0.2",
+        "hungthai1401/laravel-domain-oriented": "^0.0.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
+        "nunomaduro/larastan": "^2.6",
+        "phpro/grumphp": "^1.16",
+        "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^10.1",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
+            "App\\": "src/App/",
+            "Domain\\": "src/Domain/",
+            "Support\\": "src/Support/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
@@ -58,7 +65,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "phpro/grumphp": true
         }
     },
     "minimum-stability": "stable",
